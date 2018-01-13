@@ -1,17 +1,14 @@
 {
   "name": "selectel-storage",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Upload and delete files in storage selectel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "author": "bulatei",
   "license": "ISC",
-  "dependencies": {
-    "async": "^2.0.0-rc.3",
-    "request": "^2.72.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
