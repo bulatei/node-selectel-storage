@@ -72,7 +72,7 @@ module.exports = class Selectel {
     if (options.path) query.set('path', options.path);
     if (options.delimiter) query.set('delimiter', options.delimiter);
     return this._request({
-      path: '?' + query.toString()
+      path: `${container_name}?${query.toString()}`,
     });
   }
 
