@@ -40,14 +40,14 @@ declare class Selectel {
         delimiter: string
     } = {}): Promise<IResolveData>
     downloadFile(remote_path_to_file: string, local_path_to_file: string): Promise<IResolveData>
-    uploadFile(local_path_to_file_or_buffer: string | Buffer, remote_path_to_file: string, options: {
+    uploadFile(local_path_to_file_or_buffer: string, remote_path_to_file: string, options: {
         headers: OutgoingHttpHeaders | undefined,
         arhive: string | undefined
     } = {}): Promise<IResolveData>
-    uploadArhUnpack(local_path_to_file_or_buffer: string | Buffer, remote_path: string, arhive_format: string, options: {
+    uploadArhUnpack(local_path_to_file_or_buffer: string, remote_path: string, arhive_format: string, options: {
         headers: OutgoingHttpHeaders | undefined
     } = {}): Promise<IResolveData>
-    uploadArhUnpack2(local_path_to_file_or_buffer: string | Buffer, remote_path: string, arhive_format: string, options: {
+    uploadArhUnpack2(local_path_to_file_or_buffer: string, remote_path: string, arhive_format: string, options: {
         headers: OutgoingHttpHeaders | undefined
     } = {}): Promise<IResolveData>
     arhUnpack2Status(extract_id: string): Promise<IResolveData>
